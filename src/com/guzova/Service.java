@@ -49,11 +49,11 @@ public class Service {
         FileWriter fw = new FileWriter("output1.txt");
         for (String token : numbers)
             fw.write(token + " ");
-        fw.flush();
+        fw.close();
         fw = new FileWriter("output2.txt");
         for (String token : nonumbers)
             fw.write(token + " ");
-        fw.flush();
+        fw.close();
     }
 
     public void printCount() {
